@@ -40,7 +40,7 @@
 * directory: 你的jar包的路径
 * includes: 你的jar包的名字
 
-这样你就可以在你的项目中使用jar包含的工具类了。
+这样你就可以在你的项目中使用jar包含的工具类了。小洪。
 
 ## 使用
 你可以查看我们的接口文档来使用我们的工具类，[接口文档](https://yeh-wang.github.io/miniTools/org/onism/package-summary.html)
