@@ -33,11 +33,11 @@ public class Fact {
      * @param _target The input target array
      * @return  The sorted array
      */
-    public Double[] BubSort(Double[] _target) {
+    public double[] BubSort(double[] _target) {
         for (int i = 0; i < _target.length - 1; i++) {
             for (int j = 0; j < _target.length - i - 1; j++) {
                 if (_target[j] > _target[j + 1]) {
-                    Double temp = _target[j];
+                    double temp = _target[j];
                     _target[j] = _target[j + 1];
                     _target[j + 1] = temp;
                 }
