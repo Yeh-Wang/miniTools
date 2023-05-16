@@ -2,7 +2,6 @@ package org.onism;
 
 /**
  * @author : Yaxin-Wang
- * @date : 2023/5/16
  * @version : V1.0.0
  */
 public class Fact {
