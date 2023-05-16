@@ -100,4 +100,75 @@ public class Fact {
         QuickSort(_target, low, i - 1);
         QuickSort(_target, i + 1, high);
     }
+
+    /**
+     * Quicksort (ascending) an array of doubles.
+     *
+     * @param _target Input target array
+     * @param low start index
+     * @param high end index
+     */
+    public void QuickSort(double[] _target, int low, int high) {
+        int i, j;
+        double pivot;
+        if (low >= high) {
+            return;
+        }
+        i = low;
+        j = high;
+        pivot = _target[low];
+        while (i < j) {
+            while (_target[j] >= pivot && i < j) {
+                j--;
+            }
+            while (_target[i] <= pivot && i < j) {
+                i++;
+            }
+            if (i < j) {
+                double temp = _target[i];
+                _target[i] = _target[j];
+                _target[j] = temp;
+            }
+        }
+        _target[low] = _target[i];
+        _target[i] = pivot;
+        QuickSort(_target, low, i - 1);
+        QuickSort(_target, i + 1, high);
+    }
+
+    /**
+     * Quicksort (ascending) an array of floats.
+     *
+     * @param _target Input target array
+     * @param low start index
+     * @param high end index
+     */
+    public void QuickSort(float[] _target, int low, int high) {
+        int i, j;
+        float pivot;
+        if (low >= high) {
+            return;
+        }
+        i = low;
+        j = high;
+        pivot = _target[low];
+        while (i < j) {
+            while (_target[j] >= pivot && i < j) {
+                j--;
+            }
+            while (_target[i] <= pivot && i < j) {
+                i++;
+            }
+            if (i < j) {
+                float temp = _target[i];
+                _target[i] = _target[j];
+                _target[j] = temp;
+            }
+        }
+        _target[low] = _target[i];
+        _target[i] = pivot;
+        QuickSort(_target, low, i - 1);
+        QuickSort(_target, i + 1, high);
+    }
+
 }
