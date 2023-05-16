@@ -60,7 +60,6 @@ public class Fact {
                     _target[j] = _target[j + 1];
                     _target[j + 1] = temp;
                 }
-
             }
         }
         return _target;
