@@ -169,4 +169,15 @@ public class Fact {
         QuickSort(_target, i + 1, high);
     }
 
+    /**
+     * Iterate through an array of objects
+     * @param _target Input target array
+     *                The object must implement the Comparable interface
+     */
+    public void Iterate(Object[] _target) {
+        for (int i = 0; i < _target.length; i++) {
+            System.out.println(_target[i]);
+        }
+    }
+
 }
