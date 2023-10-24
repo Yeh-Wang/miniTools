@@ -10,6 +10,7 @@ public class FactTest {
 
     @Test
     public void testFact() {
+        //nothing to do
         Fact demo = new Fact();
         float[] array = {1,5, 7, 4, 3,2, 6};
 //        demo.QuickSort(array, 0, array.length - 1);
